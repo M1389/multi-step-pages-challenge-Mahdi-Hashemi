@@ -1,0 +1,503 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+
+}
+
+
+body{
+    background-color: hsl(229, 24%, 87%);
+}
+
+
+.generall-div{
+    background-color: hsl(0, 0%, 100%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.original-container{
+    
+    width: 95%;
+    height: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.side-bar{
+    width: 30%;
+    
+    background-color: rgb(255, 255, 147);
+    background-image: url("assets/images/bg-sidebar-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover, contain;
+    background-position: center;
+    background-attachment: fixed;
+    
+    border-radius: 20px;
+}
+
+.step-1{
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.number-step-div{
+    width: 30%;
+    height: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+
+}
+
+
+
+
+
+
+.step-one-number-div , .step-two-number-div , .step-three-number-div , .step-four-number-div{
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    border: 2px solid hsl(231, 100%, 99%);
+    color: hsl(231, 100%, 99%);
+
+}
+
+.step-three-number-div-selected{
+    background-color: hsl(228, 100%, 84%);
+}
+
+
+
+
+.step-one-number-div{
+    background-color: hsl(228, 100%, 84%);
+}
+
+
+
+.step-text{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+    color: #fff;
+    font-weight: lighter;
+}
+
+.info-text{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: 3px;
+}
+
+
+
+/* All the codes related to the multiple pages goes here. */
+
+
+.multiple-pages-div{
+    padding: 20px;
+    position: relative;
+    width: 70%;
+}
+
+.first-step-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    
+}
+
+.first-stp-header{
+    width: 90%;
+    margin: 0 auto;
+    
+    margin-bottom: 10px;
+}
+
+
+.personal{
+    font-size: 35px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+.name-input-div , .email-address-div , .phone-number-div{
+    
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+
+
+.name-text{
+    font-size: 18px;
+    font-family: 'Ubuntu', sans-serif;
+    margin-bottom: 5px;
+}
+
+
+.name-input , .email-input , .phone-input{
+    width: 80%;
+    padding: 8px;
+    font-size: 18px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    border: 2px solid hsl(229, 24%, 87%);
+    border-radius: 6px;
+}
+
+.phone-input-error{
+    width: 80%;
+    padding: 8px;
+    font-size: 18px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    border: 2px solid hsl(354, 84%, 57%);
+    border-radius: 6px;
+}
+
+.name-input::placeholder , .email-input::placeholder , .phone-input::placeholder{
+    color: hsl(229, 24%, 87%);
+}
+
+.name-input:focus , .email-input:focus , .phone-input:focus{
+    border: 2px solid hsl(213, 96%, 18%);
+    outline: none;
+}
+
+
+
+
+.error-text-div{
+    display: flex;
+    width: 82%;
+    justify-content: space-between;
+    
+}
+
+.error-text{
+    font-size: 18px;
+    font-family: 'Ubuntu', sans-serif;
+    color: hsl(354, 84%, 57%);
+    display: none;
+    
+}
+
+.error-text-visible{
+    font-size: 18px;
+    font-family: 'Ubuntu', sans-serif;
+    color: hsl(354, 84%, 57%);
+    display: block;
+}
+
+
+.bottom-buttons-div{
+    
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.go-back-btn{
+    font-size: 20px;
+    padding: 10px 25px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    background-color: hsl(229, 24%, 87%);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    display: none;
+
+}
+
+.next-step-btn{
+    font-size: 20px;
+    padding: 10px 25px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    background-color: hsl(213, 96%, 18%);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    
+}
+
+
+.next-position{
+    
+    width: 40%;
+}
+
+
+
+.step-one-number-div-unselected{
+    background-color: transparent;
+}
+
+.step-two-number-div-selected{
+    background-color: hsl(228, 100%, 84%);
+}
+
+
+
+.thankYou{
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    width: 80%;
+    height: 90%;
+}
+
+
+.t-upper{
+    
+    height: 50%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+
+.t-down{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.t-description{
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.t-head{
+    margin: 15px 0;
+    font-size: 30px;
+}
+
+
+
+@media(max-width: 1220px) {
+    .generall-div{
+        background-color: hsl(0, 0%, 100%);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        height: 80%;
+        display: flex;
+        align-items: center;
+        border-radius: 20px;
+    }
+}
+
+@media(max-width: 925px) {
+    .generall-div{
+        background-color: hsl(0, 0%, 100%);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        height: 80%;
+        display: flex;
+        align-items: center;
+        border-radius: 20px;
+    }
+}
+
+
+@media(max-width: 830px) {
+    .generall-div{
+        background-color: hsl(0, 0%, 100%);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        border-radius: 20px;
+    }
+
+    .original-container{
+        background-color: hsl(217, 100%, 97%);
+        width: 95%;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .side-bar{
+        width: 100%;
+        height: 150px;
+        background-color: rgb(255, 255, 147);
+        background-image: url("assets/images/bg-sidebar-desktop.svg");
+        background-repeat: no-repeat;
+        background-size: cover, contain;
+        background-position: bottom;
+        
+        
+        border-radius: 20px;
+        display: flex;
+        flex-direction: row;
+        
+    }
+
+    .info-step-div{
+        display: none;
+    }
+
+    .step-1{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 0 auto;
+        
+    }
+
+    .up-div{
+        width: 100%;
+        background-color: #fff;
+        border-radius: 10px;
+        margin-bottom: 25px;
+        margin-top: -45px;
+    }
+
+
+    
+
+    .multiple-pages-div{
+        width: 90%;
+    }
+
+    .name-input-div , .email-address-div , .phone-number-div{
+    
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    .step-one-number-div , .step-two-number-div , .step-three-number-div , .step-four-number-div{
+        width: 40px;
+        height: 40px;
+        background-color: transparent;
+        border-radius: 20pxpx;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        border: 2px solid hsl(231, 100%, 99%);
+        color: hsl(231, 100%, 99%);
+    
+    }
+
+    .number-step-div{
+        width: 100%;
+        height: 100%;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        
+    
+    }
+
+    .next-step-btn{
+        font-size: 20px;
+        padding: 8px 12px;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 400;
+        background-color: hsl(213, 96%, 18%);
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        
+    }
+
+    .center{
+        
+        margin: 0 auto;
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .thankYou{
+    
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% , -50%);
+        width: 80%;
+        height: 90%;
+        
+        margin-top: 100px;
+
+    }
+
+    .t-description{
+        width: 70%;
+        margin: 0 auto;
+        text-align: center;
+        margin: 10px 0;
+        font-size: 15px;
+    }
+    
+    
+}
